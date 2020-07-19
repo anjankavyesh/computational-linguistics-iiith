@@ -1,5 +1,7 @@
 let selection = document.getElementById("sellang");
 $("#hidefn").hide()
+$("#hideFn1").hide()
+let startingValue, updateValue;
 let k;
 let valueToBeDisplay = "";
 function buttonDisplay(id, value) {
@@ -8,6 +10,10 @@ function buttonDisplay(id, value) {
     document.getElementById("fn4").innerHTML = valueToBeDisplay;
     $("#hidefn").show()
     document.getElementById(id).style.display = "none";
+    startingValue++; 
+     if(startingValue == updateValue){
+        $("#hideFn1").show()
+     }
 }
 function randomizeTheValue(data) {
     var mix = data.split(" ");
@@ -78,13 +84,17 @@ if (selection.value === "english") {
     document.getElementById("fn4").innerHTML = ""
     valueToBeDisplay=""
     $("#hidefn").hide()
+    $("#hideFn1").hide()
     let gettingValue = englishArray[changeWords][0];
     k = randomizeTheValue(gettingValue);
+    startingValue = 0;
+    updateValue =0;
     let n = "";
     for (i = 0; i <= k.length - 1; i++) {
         val = k[i];
     let m = "  <button style= 'font-size:16px ; padding:4px ; margin-right:4px ' id='btn1" + i + "' onclick='buttonDisplay(this.id,this.value)' value='" + val + "'>" + val + "</button>  ";
         n += m;
+        updateValue++;
     }
     document.getElementById("val").innerHTML = n 
     }
@@ -156,11 +166,14 @@ else if (selection.value === "hindi") {
     
     let gettingValue = hindiArray[changeWords][0];
     k = randomizeTheValue(gettingValue);
+    startingValue = 0;
+    updateValue = 0;
     let n = "";
     for (i = 0; i <= k.length - 1; i++) {
         val = k[i];
     let m = "  <button style= 'font-size:16px ; padding:4px ; margin-right:4px ' id='btn1" + i + "' onclick='buttonDisplay(this.id,this.value)' value='" + val + "'>" + val + "</button>  ";
         n += m;
+        updateValue++;
     }
     document.getElementById("val").innerHTML = n
 } else {
@@ -170,6 +183,7 @@ else if (selection.value === "hindi") {
     document.getElementById("fn3").innerHTML = ""
     document.getElementById("fn4").innerHTML = ""
     $("#hidefn").hide()
+    $("#hideFn1").hide()
     alert("Please choose any language")
     }
 }
@@ -180,5 +194,6 @@ function reset() {
     document.getElementById("fn3").innerHTML = ""
     document.getElementById("fn4").innerHTML = ""
     valueToBeDisplay = ""
-    $("#hidefn").hide()
+    startingValue=0;
+    $("#hideFn1").hide()
 }

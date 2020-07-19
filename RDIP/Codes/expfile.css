@@ -68,6 +68,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
 } 
+#hideFn1{
+    position: absolute;
+    font-size:18px ;
+    padding:6px ;
+    margin-right:4px ;
+    top: 92%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+} 
 h1 {
      margin: 120px 150px;
     font = "italic bold 20px arial,serif"
