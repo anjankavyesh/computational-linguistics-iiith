@@ -1,5 +1,14 @@
 let selection = document.getElementById("sellang");
 $("#hidefn").hide()
+let k;
+let valueToBeDisplay = "";
+function buttonDisplay(id, value) {
+    document.getElementById("fn3").innerHTML = "Formed Sentence (after selecting words):";
+    valueToBeDisplay += value + " ";
+    document.getElementById("fn4").innerHTML = valueToBeDisplay;
+    $("#hidefn").show()
+    document.getElementById(id).style.display = "none";
+}
 function randomizeTheValue(data) {
     var mix = data.split(" ");
     var i = mix.length, temp, index;
@@ -13,14 +22,7 @@ function randomizeTheValue(data) {
     return mix;
 }
 
-var valueToBeDisplay = "";
-function buttonDisplay(id, value) {
-    document.getElementById("fn3").innerHTML = "Formed Sentence (after selecting words):";
-    valueToBeDisplay += value + " ";
-    document.getElementById("fn4").innerHTML = valueToBeDisplay;
-    $("#hidefn").show()
-    document.getElementById(id).style.display = "none";
-}
+
 run = function () {
 if (selection.value === "english") {
     let firstEnglishSentence = ['John ate an apple before afternoon',
@@ -71,18 +73,17 @@ if (selection.value === "english") {
         fifthEnglishSentence,sixthEnglishSentence,seventhEnglishSentence,eightEnglishSentence,ninethEnglishSentence,tenthEnglishSentence];
     document.getElementById("fn1").innerHTML = "(select the buttons in proper order)"
     document.getElementById("fn2").innerHTML = "Form a sentence (Declarative or Interrogative or any other type) from the given words"
-     var changeWords = Math.floor(Math.random()*englishArray.length)
+     let changeWords = Math.floor(Math.random()*englishArray.length)
     document.getElementById("fn3").innerHTML = ""
     document.getElementById("fn4").innerHTML = ""
+    valueToBeDisplay=""
     $("#hidefn").hide()
-    var changeWords = Math.floor(Math.random() * englishArray.length);
-    var gettingValue = englishArray[changeWords][0];
-    var k = randomizeTheValue(gettingValue);
-    var m = "";
-    var n = "";
+    let gettingValue = englishArray[changeWords][0];
+    k = randomizeTheValue(gettingValue);
+    let n = "";
     for (i = 0; i <= k.length - 1; i++) {
         val = k[i];
-        m = "  <button style= 'font-size:15px ; padding:4px ; margin-right:4px ' id='btn1" + i + "' onclick='buttonDisplay(this.id,this.value)' value='" + val + "'>" + val + "</button>  ";
+    let m = "  <button style= 'font-size:16px ; padding:4px ; margin-right:4px ' id='btn1" + i + "' onclick='buttonDisplay(this.id,this.value)' value='" + val + "'>" + val + "</button>  ";
         n += m;
     }
     document.getElementById("val").innerHTML = n 
@@ -150,15 +151,15 @@ else if (selection.value === "hindi") {
    var randomizeWords = Math.floor(Math.random()*hindiArray.length)
     document.getElementById("fn3").innerHTML = ""
     document.getElementById("fn4").innerHTML = ""
+    valueToBeDisplay = "";
     $("#hidefn").hide()
-    var changeWords = Math.floor(Math.random() * hindiArray.length);
-    var gettingValue = hindiArray[changeWords][0];
-    var k = randomizeTheValue(gettingValue);
-    var m = "";
-    var n = "";
+    
+    let gettingValue = hindiArray[changeWords][0];
+    k = randomizeTheValue(gettingValue);
+    let n = "";
     for (i = 0; i <= k.length - 1; i++) {
         val = k[i];
-        m = "  <button style= 'font-size:15px ; padding:4px ; margin-right:4px ' id='btn1" + i + "' onclick='buttonDisplay(this.id,this.value)' value='" + val + "'>" + val + "</button>  ";
+    let m = "  <button style= 'font-size:16px ; padding:4px ; margin-right:4px ' id='btn1" + i + "' onclick='buttonDisplay(this.id,this.value)' value='" + val + "'>" + val + "</button>  ";
         n += m;
     }
     document.getElementById("val").innerHTML = n
@@ -171,4 +172,13 @@ else if (selection.value === "hindi") {
     $("#hidefn").hide()
     alert("Please choose any language")
     }
+}
+function reset() {
+    for (i = 0; i <= k.length - 1; i++) {
+        document.getElementById('btn1' + i).style.display = "";
+    }
+    document.getElementById("fn3").innerHTML = ""
+    document.getElementById("fn4").innerHTML = ""
+    valueToBeDisplay = ""
+    $("#hidefn").hide()
 }

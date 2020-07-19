@@ -43,8 +43,8 @@
 #fn3{
     position: absolute;
     width: 870px;
-    top: 70%;
-    left: 65%;
+    top: 68%;
+    left: 64%;
     transform: translate(-50%, -50%);
     font-size: 20px;
     color: darkgreen;
@@ -53,7 +53,7 @@
 #fn4{
     position: absolute;
     width: 870px;
-    top: 73%;
+    top: 71%;
     left: 64%;
     font-family: Geneva;
     transform: translate(-50%, -50%);
