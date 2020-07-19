@@ -1,0 +1,4 @@
+The Missing functionalities that are to be added are
+1. The hyperlinks should be given to the images/icons of the Virtual labs and IIIT Hyderabad
+2. There should be a naviagation bar present for every page,To redirect from current page
+3. In Quizz page there are questions but there is functionality to choose correct sentence  
