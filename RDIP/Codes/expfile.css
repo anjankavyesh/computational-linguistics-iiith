@@ -1,9 +1,9 @@
 #fn1{
     position: absolute;
     width: 870px;
-    top: 40%;
+    top: 43%;
     align-content: center;
-    left: 53%;
+    left: 64%;
     font-size: 20px;
     color: lightgreen;
     font-family: Geneva;
@@ -12,8 +12,8 @@
 #fn2{
     position: absolute;
     width: 870px;
-    top: 42%;
-    left: 56%;
+    top: 40%;
+    left: 60%;
     align-content: center;
     font-size: 18px;
     color: lightgreen;
@@ -67,7 +67,29 @@
     font-style: bold;
     font-family: Geneva;
     transform: translate(-50%, -50%);
-    font-size: 30px;
+    font-size: 32px;
+}
+#fn6{
+    position: absolute;
+    width: 850px;
+    top: 115%;
+    left: 73%;
+    font-style: bold;
+    font-family: Geneva;
+    color: blue;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+}
+#fn7{
+    position: absolute;
+    width: 870px;
+    top: 140%;
+    left: 75%;
+    font-style: bold;
+    color: darkblue;
+    font-family: Geneva;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
 }
 #hidefn{
     position: absolute;
@@ -92,8 +114,8 @@
     font-size:18px ;
     padding:6px ;
     margin-right:4px ;
-    top: 110%;
-    left: 50%;
+    top: 250%;
+    left: 20%;
     transform: translate(-50%, -50%);
 }
 h1 {
