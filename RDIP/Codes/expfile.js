@@ -298,5 +298,5 @@ function checkCorrectness(){
             document.getElementById("fn5").innerHTML = "Wrong answer!!!"
             document.getElementById("fn5").style.color = "red"
         }
-$("#hideFn2").hide()
+$("#hideFn2").show()
  }
