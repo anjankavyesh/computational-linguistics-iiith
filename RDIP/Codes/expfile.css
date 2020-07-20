@@ -4,7 +4,8 @@
     top: 43%;
     align-content: center;
     left: 64%;
-    font-size: 20px;
+    font-size: 19px;
+    font-weight: bold;
     color: lightgreen;
     font-family: Geneva;
     transform: translate(-50%, -50%);
@@ -43,26 +44,27 @@
 #fn3{
     position: absolute;
     width: 870px;
-    top: 68%;
+    top: 64%;
     left: 64%;
     transform: translate(-50%, -50%);
     font-size: 20px;
+    font-weight:bold;
     color: darkgreen;
     font-family: Geneva;
 }
 #fn4{
     position: absolute;
     width: 870px;
-    top: 71%;
-    left: 64%;
+    top: 68%;
+    left: 68%;
     font-family: Geneva;
     transform: translate(-50%, -50%);
-    font-size: 22px;
+    font-size: 20px;
 }
 #fn5{
     position: absolute;
     width: 870px;
-    top: 100%;
+    top: 110%;
     left: 73%;
     font-style: bold;
     font-family: Geneva;
@@ -72,8 +74,8 @@
 #fn6{
     position: absolute;
     width: 850px;
-    top: 115%;
-    left: 73%;
+    top: 122%;
+    left: 75%;
     font-style: bold;
     font-family: Geneva;
     color: blue;
@@ -83,8 +85,8 @@
 #fn7{
     position: absolute;
     width: 870px;
-    top: 140%;
-    left: 75%;
+    top: 160%;
+    left: 70%;
     font-style: bold;
     color: darkblue;
     font-family: Geneva;
@@ -96,7 +98,7 @@
     font-size:18px ;
     padding:6px ;
     margin-right:4px ;
-    top: 80%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
 } 
@@ -115,7 +117,7 @@
     padding:6px ;
     margin-right:4px ;
     top: 250%;
-    left: 20%;
+    left: 10%;
     transform: translate(-50%, -50%);
 }
 h1 {

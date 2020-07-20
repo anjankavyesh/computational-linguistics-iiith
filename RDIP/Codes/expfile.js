@@ -7,7 +7,7 @@ let k;
 let replaceWords;
 let valueToBeDisplay = "";
 function buttonDisplay(id, value) {
-    document.getElementById("fn3").innerHTML = "Formed Sentence (after selecting words):";
+    document.getElementById("fn3").innerHTML = "Formed Sentence<i>(after selecting words)<i>:";
     valueToBeDisplay += value + " ";
     document.getElementById("fn4").innerHTML = valueToBeDisplay;
     $("#hidefn").show()
@@ -162,7 +162,7 @@ function ranvalue(data) {
 
 else if (selection.value === "hindi") {
     
-    document.getElementById("fn1").innerHTML = "(select the buttons in proper order)"
+    document.getElementById("fn1").innerHTML = "(Select the buttons in proper order)"
     document.getElementById("fn2").innerHTML = "Form a sentence (Declarative or Interrogative or any other type) from the given words"
     replaceWords = Math.floor(Math.random()*hindiArray.length)
     document.getElementById("fn3").innerHTML = ""
