@@ -63,7 +63,7 @@
     position: absolute;
     width: 870px;
     top: 100%;
-    left: 77%;
+    left: 73%;
     font-style: bold;
     font-family: Geneva;
     transform: translate(-50%, -50%);
@@ -87,6 +87,15 @@
     left: 52%;
     transform: translate(-50%, -50%);
 } 
+#hideFn2{
+    position: absolute;
+    font-size:18px ;
+    padding:6px ;
+    margin-right:4px ;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 h1 {
      margin: 120px 150px;
     font = "italic bold 20px arial,serif"

@@ -1,6 +1,7 @@
 let selection = document.getElementById("sellang");
 $("#hidefn").hide()
 $("#hideFn1").hide()
+$("#hideFn2").hide()
 let startingValue, updateValue;
 let k;
 let valueToBeDisplay = "";
@@ -86,6 +87,7 @@ if (selection.value === "english") {
     valueToBeDisplay=""
     $("#hidefn").hide()
     $("#hideFn1").hide()
+    $("#hideFn2").hide()
     let gettingValue = englishArray[changeWords][0];
     k = randomizeTheValue(gettingValue);
     startingValue = 0;
@@ -166,6 +168,7 @@ else if (selection.value === "hindi") {
     valueToBeDisplay = "";
     $("#hidefn").hide()
     $("#hideFn1").hide()
+    $("#hideFn2").hide()
     let gettingValue = hindiArray[changeWords][0];
     k = randomizeTheValue(gettingValue);
     startingValue = 0;
@@ -187,6 +190,7 @@ else if (selection.value === "hindi") {
     document.getElementById("fn5").innerHTML = ""
     $("#hidefn").hide()
     $("#hideFn1").hide()
+    $("#hideFn2").hide()
     alert("Please choose any language")
     }
 }
@@ -294,4 +298,5 @@ function checkCorrectness(){
             document.getElementById("fn5").innerHTML = "Wrong answer!!!"
             document.getElementById("fn5").style.color = "red"
         }
+$("#hideFn2").hide()
  }
